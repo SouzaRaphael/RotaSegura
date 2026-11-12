@@ -1,6 +1,6 @@
 # Rota Segura (Flutter)
 
-## Integrantes
+### Integrantes
 
 - David dos Santos Lima RM555441 
 - Enzo Francisco Luchini RM557710 
