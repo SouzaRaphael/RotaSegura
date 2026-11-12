@@ -1,0 +1,51 @@
+name: rota_segura
+description: "Rota Segura — compare rotas e acompanhe a chuva em São Paulo."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  shared_preferences: ^2.5.6
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
+  lucide_icons_flutter: ^4.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: DM Sans
+      fonts:
+        - asset: assets/fonts/DMSans-400.ttf
+          weight: 400
+        - asset: assets/fonts/DMSans-500.ttf
+          weight: 500
+        - asset: assets/fonts/DMSans-600.ttf
+          weight: 600
+        - asset: assets/fonts/DMSans-700.ttf
+          weight: 700
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-400.ttf
+          weight: 400
+        - asset: assets/fonts/Manrope-500.ttf
+          weight: 500
+        - asset: assets/fonts/Manrope-600.ttf
+          weight: 600
+        - asset: assets/fonts/Manrope-700.ttf
+          weight: 700
+        - asset: assets/fonts/Manrope-800.ttf
+          weight: 800
