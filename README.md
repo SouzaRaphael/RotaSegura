@@ -1,5 +1,11 @@
 # Rota Segura (Flutter)
 
+## Integrantes
+
+- David dos Santos Lima RM555441 
+- Enzo Francisco Luchini RM557710 
+- Raphael Costa de Souza RM559024
+
 Versão mobile em Flutter do [Rota Segura](https://github.com/EnzoLuchini/Rota-segura), feita para rodar no **Chrome em uma aba vertical** (tela-alvo 440 × 956, a mesma do design mobile da referência).
 
 O app compara rotas de carro em São Paulo pela **exposição à chuva**: a chuva registrada na última hora nas estações perto do trajeto e a previsão para as próximas horas. Também mostra a chuva agora em cada estação da cidade e guarda rotas frequentes no aparelho.
