@@ -66,6 +66,7 @@ class _StationMarker extends StatelessWidget {
 }
 
 PolylineLayer routePolylineLayer(List<DrivingRoute> routes, int selected) => PolylineLayer(
+  drawInSingleWorld: true,
   polylines: [
     for (var i = 0; i < routes.length; i++)
       if (i != selected)

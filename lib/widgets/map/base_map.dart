@@ -5,6 +5,16 @@ import 'package:latlong2/latlong.dart';
 import '../../config/api_config.dart';
 import '../../theme/app_colors.dart';
 
+/// EPSG:3857 sem repetição horizontal do mundo. Evita o assert
+/// "Infinite loop going beyond 30 for world width ..." das camadas de feição
+/// (polyline/marker/circle) do flutter_map 8.x. O app só mostra São Paulo.
+class _SingleWorldCrs extends Epsg3857 {
+  const _SingleWorldCrs();
+
+  @override
+  bool get replicatesWorldLongitude => false;
+}
+
 class BaseMap extends StatelessWidget {
   const BaseMap({
     super.key,
@@ -27,6 +37,7 @@ class BaseMap extends StatelessWidget {
   Widget build(BuildContext context) => FlutterMap(
     mapController: controller,
     options: MapOptions(
+      crs: const _SingleWorldCrs(),
       initialCenter: center,
       initialZoom: zoom,
       minZoom: 9,
